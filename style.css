@@ -1,0 +1,694 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+
+    background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* ---------Container---------- */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ---------Header---------- */
+
+.header {
+  width: 100%;
+  height: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0;
+  align-items: center;
+  border-bottom: 1px solid #515369;
+}
+
+.header_logo{
+  width: 50%;
+  max-width: 300px;
+  max-height: 60px;
+}
+
+.header.follow{
+  height: auto;
+  position: fixed;
+  background: #0f1025
+}
+
+.header.follow .header_inner{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+/* ---------Nav---------- */
+
+.nav {
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity .2s linear;
+}
+.nav_link:first-child {
+  margin-left: 0;
+}
+
+.nav_link:hover {
+  opacity: 1;
+}
+
+/* ---------Intro---------- */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+  padding-top: 100px;
+  margin-bottom: 85px;
+
+  background: #0f1025 url("img/head-bg.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro_inner{
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.intro_title {
+  margin: 0 0 30px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.intro_subtitle {
+  margin-bottom: 60px;
+
+  font-size:22px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ---------Button---------- */
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 14px 40px;
+
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: background .2s linear;
+}
+
+.btn--red{
+  background-color: #e84545;
+}
+
+.btn--red:hover{
+  background-color: #dd3434;
+}
+
+/* ---------Quickinfo---------- */
+
+.univ_title{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2d3033;
+  font-size: 30px;
+
+}
+
+.quickinfo{
+  /* position: absolute; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+
+}
+
+.quickinfo1{
+  margin-top: 50px;
+  width: 100%;
+  text-align: left;
+}
+
+.quickinfo2{
+    margin-top: 50px;
+  width: 100%;
+  text-align: left;
+}
+.quickinfo3{
+    margin-top: 50px;
+  width: 100%;
+  text-align: left;
+}
+
+.quickinfo_icon{
+  float:left;
+  width: 100%;
+  /* height: 100%; */
+  max-width: 200px;
+  /* min-height: 250px; */
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.quickinfo_title{
+  font-weight: 700;
+  font-size: 25px;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.quickinfo_text{
+  font-size: 20px;
+  line-height: 1.5;
+  color: #6c7279;
+}
+
+/* ---------Teachers---------- */
+
+.teachers{
+  margin: 100px 0 70px;
+  background: url("img/Teachers-bg.png");
+  /* background-size: cover; */
+  background-color: #0f1025;
+}
+
+.teachers_inner{
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teachers_info{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 50px 15px;
+  margin-bottom: 30px;
+  /* border: 2px solid;
+  border-color: #fff;
+  border-radius: 6px;
+  background-color: #fff; */
+}
+
+.teacher_photo{
+  margin-bottom: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.teacher_name{
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #747474 /*#2d3033*/;
+}
+
+.teacher_prof{
+  margin-bottom: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fc9b9d;
+}
+
+.teacher_text{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* ---------Social---------- */
+
+.socialbtns{
+  display: flex;
+}
+
+.socialbtns--footer{
+  justify-content: center;
+}
+
+.social_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+/* ---------Prices---------- */
+
+.univ_title{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2d3033;
+  font-size: 30px;
+
+}
+
+/* ---------Reviews---------- */
+
+.review{
+  overflow: hidden;
+  background-color: #0f1025;
+}
+
+.review_items{
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review_photo{
+  position: relative;
+  /* margin-right: 15px; */
+  width: 50%;
+}
+.review_img{
+  max-width: 100%;
+}
+.review_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+}
+
+.review_text{
+  margin-bottom: 25px;
+  font-family: 'Cardo', sans-serif;
+  font-style:  italic;
+  font-size: 35px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.review_author{
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);;
+}
+
+/* ---------Test---------- */
+
+.pilottest{
+  margin: 90px 0;
+  text-align: center;
+}
+
+.pilot_title{
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* ---------Form---------- */
+
+
+.form{
+  margin-left: 35%
+}
+.titles{
+  display: inline-block;
+	width: 140px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.form_message{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: #e84545;
+	border-radius: 5px;
+	/* margin:10px; */
+	padding: 10px;
+	width: 320px;
+	height:330px;
+  /* position: fixed; */
+  /* display: none; */
+}
+/* .form_message.show{
+  display: block;
+  position: fixed;
+  top: 40%;
+  left:30%;
+  z-index: 1000;
+} */
+
+.form_message input,textarea{
+	border-radius: 5px;
+	width: 170px;
+}
+
+.submit{
+	height: 50px;
+	/* float: right; */
+}
+
+.form_message h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #fff;
+	text-align: center;
+}
+
+/* ---------Footer---------- */
+
+.footer{
+  padding: 70px 0;
+  background-color: #0f1025;
+}
+
+.footer_inner{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer_block{
+  width: 33.33333%;
+  text-align: center;
+}
+
+.footer_title{
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+}
+.footer_text{
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ---------menu---------- */
+
+.menu{
+  display: none;
+  background: none;
+  border: 0;
+  padding: 15px 0;
+}
+
+.menu_item{
+  display: block;
+  width: 30px;
+  height: 2px;
+  color: #fff;
+
+  background-color: rgba(255, 255, 255, 0.7);
+
+  position: relative;
+}
+
+.menu_item:before,
+.menu_item:after{
+  content: "";
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.menu_item:before{
+  width: 30px;
+  top:-8px;
+}
+
+.menu_item:after{
+  width: 30px;
+  bottom: -8px;
+}
+
+/* ---------Media---------- */
+
+@media (max-width: 800px){
+  /* intro */
+  .intro_title{
+    font-size: 35px;
+  }
+  .intro_subtitle{
+    font-size: 19px;
+  }
+  .univ_title{
+    font-size: 20px;
+  }
+  /* quickinfo */
+  .quickinfo_icon{
+    max-width: 20%;
+  }
+  .quickinfo_title{
+    font-size: 18px;
+  }
+  .quickinfo_text{
+    font-size: 16px;
+  }
+  .teachers_info{
+    width: 50%;
+  }
+  .review_text{
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px){
+  .nav{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 100%;
+    background-color: #0f1025;
+    text-align: right;
+  }
+
+  .nav.show{
+    display: flex;
+  }
+
+  .nav_link{
+    padding: 10px 15px;
+  }
+  .menu{
+    display: block;
+  }
+  /* intro */
+  .intro{
+    height: auto;
+    max-height: 600px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .intro_title{
+    font-size: 20px;
+  }
+  .intro_subtitle{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .univ_title{
+    font-size: 20px;
+  }
+  /* quickinfo */
+  .quickinfo_icon{
+    max-width: 20%;
+  }
+  .quickinfo_title{
+    font-size: 18px;
+  }
+  .quickinfo_text{
+    font-size: 16px;
+  }
+  /* teachers */
+  .teachers_info{
+    width: 100%;
+  }
+  .teacher_name{
+    text-align: center;
+  }
+  .teacher_prof{
+    text-align: center;
+  }
+  .teacher_text{
+    text-align: center;
+  }
+  /* social */
+  .socialbtns--teachers{
+    justify-content: center;
+  }
+  /* review */
+  .review_photo{
+    display: none;
+  }
+  .review_content{
+    padding-right: 35px;
+    width: 100%
+  }
+  .review_text{
+    font-size: 25px;
+  }
+  /* pilot */
+  .pilot_title{
+    font-size: 20px;
+  }
+  /* footer */
+  .footer_title{
+    font-size: 13px;
+  }
+  .footer_text{
+    font-size: 10px;
+  }
+}
+@media (max-width: 320px){
+  .nav{
+    display: none;
+  }
+  /* intro */
+  .intro{
+    height: auto;
+    max-height: 450px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .intro_title{
+    font-size: 20px;
+  }
+  .intro_subtitle{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .univ_title{
+    font-size: 20px;
+  }
+  /* quickinfo */
+  .quickinfo_icon{
+    display: none;
+  }
+  .quickinfo_title{
+    font-size: 18px;
+    text-align: center;
+  }
+  .quickinfo_text{
+    font-size: 16px;
+    text-align: center;
+  }
+  /* teachers */
+  .teachers_info{
+    width: 100%;
+  }
+  .teacher_name{
+    text-align: center;
+  }
+  .teacher_prof{
+    text-align: center;
+  }
+  .teacher_text{
+    text-align: center;
+  }
+  /* social */
+  .socialbtns--teachers{
+    justify-content: center;
+  }
+  /* review */
+  .review_photo{
+    display: none;
+  }
+  .review_content{
+    width: 100%
+  }
+  .review_text{
+    font-size: 20px;
+  }
+  /* pilot */
+  .pilot_title{
+    font-size: 20px;
+  }
+  /* footer */
+  .footer_title{
+    font-size: 13px;
+  }
+  .footer_block--social{
+    display: none;
+  }
+  .footer_block{
+    width: 50%;
+  }
+  .footer_text{
+    font-size: 10px;
+  }
+}
