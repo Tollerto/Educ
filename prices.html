@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta content='true' name='HandheldFriendly'>
+    <meta content='width' name='MobileOptimized'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="615884243507-b51s0fdtq4oikgvtm7026546ujfakqfv.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>О школе</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!------Header------>
+
+          <header class="header" id="header">
+            <div class="container">
+              <div class="header_inner">
+                <div class="header_logo">
+
+                  <img src="img/logo.svg" alt="">
+
+                </div>
+
+                <nav class="nav" id="nav">
+                  <a class="nav_link" href="index.html">Главная</a>
+                  <a class="nav_link" href="about.html">О нас</a>
+                  <div class="g-signin2 " data-onsuccess="onSignIn" data-theme="dark"></div>
+                  <button class="signOut " onclick="signOut()">Sign out</button>
+                  <!-- <a class="nav_link" href="#">Вход</a> -->
+                </nav>
+
+                <button class="menu" type="button" id="toggleNav">
+                  <span class="menu_item"></span>
+                </button>
+              </div>
+            </div>
+          </header>
+          <!------Intro------>
+
+          <div class="intro_prices" id="intro">
+            <div class="container">
+              <div class="intro_inner">
+                <h1 class="intro_title">подробнее о планах обучения</h1>
+              </div>
+            </div>
+          </div>
+          <!-- Courses -->
+
+  <div class="container">
+    <div class="courses">
+    <div class="courses_item">
+        <img class="courses_img" src="img/courses/course1.png" alt="">
+        <h4 class="courses_title">Английский</h4>
+        <div class="courses_text">
+          Информация по плану обучения английскому языку.
+        </div>
+        <br>
+        <a href="#" class="courses_btn">тык</a>
+    </div>
+    <div class="courses_item">
+        <img class="courses_img"  src="img/courses/course2.png" alt="">
+        <h4 class="courses_title">Немецкий</h4>
+        <div class="courses_text">
+          Информация по плану обучения немецкий языку.
+        </div>
+        <br>
+        <a href="#" class="courses_btn">тык</a>
+    </div>
+    <div class="courses_item">
+        <img class="courses_img"  src="img/courses/course3.png" alt="">
+        <h4 class="courses_title">Французский</h4>
+        <div class="courses_text">
+          Информация по плану обучения французский языку.
+        </div>
+        <br>
+        <a href="#" class="courses_btn">тык</a>
+    </div>
+    <div class="courses_item">
+        <img class="courses_img"  src="img/courses/course4.png" alt="">
+        <h4 class="courses_title">Китайский</h4>
+        <div class="courses_text">
+          Информация по плану обучения китайский языку.
+        </div>
+        <br>
+        <a href="#" class="courses_btn">тык</a>
+    </div>
+    <div class="courses_item">
+        <img class="courses_img"  src="img/courses/course5.png" alt="">
+        <h4 class="courses_title">Японский</h4>
+        <div class="courses_text">
+          Информация по плану обучения японский языку.
+        </div>
+        <br>
+        <a href="#" class="courses_btn">тык</a>
+    </div>
+    <div class="courses_item">
+        <img class="courses_img"  src="img/courses/course6.png" alt="">
+        <h4 class="courses_title">Корейский</h4>
+        <div class="courses_text">
+          Информация по плану обучения корейский языку.
+        </div>
+        <br>
+        <a href="#" class="courses_btn">тык</a>
+    </div>
+
+  </div>
+
+</div>
+
+    </div>
+  </div>
+</div>
+          <!------Footer------>
+
+          <footer class="footer">
+              <div class="container">
+                <div class="footer_inner">
+                  <div class="footer_block">
+                    <h4 class="footer_title">
+                      Место расположения
+                    </h4>
+                    <div class="footer_text">
+                      Cверхскопление Ланиакеа, Местная группа галактик, Млечный Путь, Солнечная система, планета Земля.
+                    </div>
+                  </div>
+
+                  <div class="footer_block footer_block--social">
+                    <h4 class="footer_title">
+                      соц сети
+                    </h4>
+                    <div class="socialbtns socialbtns--footer">
+                      <a class="social_link" href="https://www.facebook.com"><img src="img/facebook.svg" alt=""height="30px"></a>
+                      <a class="social_link" href="https://www.instagram.com"><img src="img/instagram.svg" alt=""></a>
+                      <a class="social_link" href="https://twitter.com"><img src="img/twitter.svg" alt=""></a>
+                    </div>
+                  </div>
+
+                  <div class="footer_block">
+                    <h4 class="footer_title">
+                      Контакты
+                    </h4>
+                    <div class="footer_text">
+                      +380000000<br> +380000000 <br> example@gmail.com
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+          </footer>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
